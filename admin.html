@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>لوحة الأدمن - نيون ليبيا</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl" class="neon-bg">
+  <header class="site-header">
+    <h1>لوحة الأدمن — نيون ليبيا</h1>
+    <p class="phone">للطلب: <a href="tel:094533211">094533211</a></p>
+    <nav>
+      <a href="index.html">العودة للموقع</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>تسجيل الدخول</h2>
+      <form id="loginForm">
+        <label>كلمة مرور الأدمن: <input type="password" id="adminPass" required></label>
+        <button type="submit">دخول</button>
+      </form>
+      <div id="loginMsg" class="small"></div>
+    </section>
+
+    <section id="adminPanel" class="card hidden">
+      <h2>إدارة المنشورات</h2>
+      <form id="postForm">
+        <label>عنوان المنشور:<input name="title" required></label>
+        <label>سعر (اختياري):<input name="price"></label>
+        <label>وصف:<textarea name="desc" required></textarea></label>
+        <label>صور (رابط أو نص بديل مفصول بفواصل):<input name="images" placeholder="صورة1.jpg, صورة2.jpg"></label>
+        <button type="submit">حفظ المنشور</button>
+      </form>
+
+      <h3>قائمة المنشورات</h3>
+      <div id="adminPosts"></div>
+
+      <h3>قائمة الشكاوى</h3>
+      <div id="adminComplaints"></div>
+
+      <h3>قائمة طلبات الدعم</h3>
+      <div id="adminSupport"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year2"></span> نيون ليبيا</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
