@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>نيون ليبيا - متجر المنتجات الدعائية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl" class="neon-bg">
+  <header class="site-header">
+    <h1>نيون ليبيا</h1>
+    <p class="phone">للطلب والاستفسار: <a href="tel:094533211">094533211</a></p>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#support">مركز الدعم</a>
+      <a href="#complaints">مركز الشكاوى</a>
+      <a href="admin.html">لوحة الأدمن</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="card">
+      <h2>صنع تصميم نيـون حسب مشروعك</h2>
+      <p>اختر مشروعك، حمل صورك، وسننشئ تصميم نيـون إعلاني مخصص.</p>
+    </section>
+
+    <section id="products" class="card">
+      <h3>المنشورات والمنتجات</h3>
+      <div id="productsGrid" class="grid"></div>
+      <p class="hint">يمكن للأدمن إضافة أو تعديل المنشورات من صفحة الأدمن.</p>
+    </section>
+
+    <section id="support" class="card">
+      <h3>مركز الدعم الفني</h3>
+      <form id="supportForm">
+        <label>الاسم:<input name="name" required></label>
+        <label>الهاتف أو البريد:<input name="contact" required></label>
+        <label>مشكلة/استفسار:<textarea name="message" required></textarea></label>
+        <button type="submit">إرسال للدعم</button>
+      </form>
+      <div id="supportMsg" class="small"></div>
+    </section>
+
+    <section id="complaints" class="card">
+      <h3>مركز الشكاوى</h3>
+      <form id="complaintForm">
+        <label>الاسم:<input name="name" required></label>
+        <label>رقم الطلب (إن وجد):<input name="order"></label>
+        <label>تفاصيل الشكوى:<textarea name="message" required></textarea></label>
+        <button type="submit">إرسال الشكوى</button>
+      </form>
+      <div id="complaintMsg" class="small"></div>
+    </section>
+
+    <section class="card">
+      <h3>تحميل بيانات (أدمن)</h3>
+      <button id="exportData">تصدير بيانات الموقع (JSON)</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> نيون ليبيا — جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
